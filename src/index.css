@@ -1,13 +1,104 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+		"Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.whole_page {
+	width: 100%;
+	height: 100vh;
+	background-color: #6983aa;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.todolist {
+	width: 25%;
+	height: 80vh;
+	background-color: #f4f4f4;
+	box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 15px;
+}
+
+h1 {
+	color: white;
+	background: transparent;
+	background-color: #8566aa;
+	padding: 6px 0px 2px 0px;
+	margin-bottom: 10px;
+	box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+input {
+	text-align: center;
+	border: none;
+	background: transparent;
+	height: 30px;
+	top: 10px;
+	font-size: 20px;
+	font-weight: 500;
+	width: 80%;
+	outline: none;
+	border-bottom: 2px solid #8566aa;
+}
+
+.add {
+	color: white;
+	background-color: #8566aa;
+	border: #8566aa;
+	border-radius: 50%;
+	margin-left: 10px;
+	padding: 7px;
+	font-size: 20px;
+	width: 40px;
+}
+
+.add:hover {
+	background-color: #4bb543;
+}
+
+.close {
+	float: left;
+	color: white;
+	background-color: #8566aa;
+	border: none;
+	border-radius: 50%;
+	margin: 15px 10px 15px 15px;
+	height: auto;
+	width: auto;
+	padding: 10px;
+}
+
+.close:hover {
+	background-color: red;
+}
+
+.tasks_body {
+	width: 25%;
+	height: 60vh;
+	position: fixed;
+	overflow: auto;
+}
+
+.tasks {
+	float: left;
+	width: 80%;
+	height: 10%;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+	margin: 15px 0px;
+	/* border: 1px solid black; */
+	font-size: medium;
+	padding-top: 6px;
 }
