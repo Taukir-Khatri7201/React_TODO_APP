@@ -12,7 +12,7 @@ function Task(props) {
 			>
 				X
 			</button>
-			<span className="tasks">{props.content}</span>
+			<p className="tasks">{props.content}</p>
 		</>
 	);
 }
